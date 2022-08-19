@@ -1,15 +1,21 @@
+import Button from './loseventos/Button'
+
 function Evento({numero}){
+	function meuEvento(){
+		console.log('Fue activado!');
+	}
 	
-	function myEvent(){
-		console.log(`Ay sí, fue activado! ${numero}`);
-	};
+	function segundoEvento(){
+		console.log('Activando el segundo evento!');
+	}
 	
 	return(
 		<div>
+			<Button event={meuEvento} text="First Button" />
+			<Button event={segundoEvento} text="Ilari ari ari ê" />
 			<p>Clique abaixo para adicionar o evento.</p>
-			<button onClick={myEvent}>Ativar</button>
 		</div>
-	);
-};
+	)
+}
 
 export default Evento; 
