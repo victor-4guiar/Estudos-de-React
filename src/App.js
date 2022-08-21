@@ -1,15 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-import Evento from './components/Event';
-import Form from './components/Form'
-import Condicional from './components/Condicional';
+import OutraLista from './components/OutraLista';
+import Box from './components/box/Box'
 
 function App() {
 	
-return(
+	const myint = ['React', 'Vue', 'Angular']
+	
+	return(
 		<div className="App">
-			<h1>Flamengo</h1>
-			<Condicional />
+			<h1>Renderização de Listas</h1>
+			<OutraLista itens={myint} />
+			<OutraLista itens="" />
+			<Box />
+			<Box />
+			<Box />
+			<Box />
 		</div>
 	);
 }
