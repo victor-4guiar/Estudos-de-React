@@ -1,21 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-import OutraLista from './components/OutraLista';
-import Box from './components/box/Box'
+import {useState} from 'react';
+import SeuNome from './components/SeuNome';
+import Saudacao from './components/Saudacao'
 
 function App() {
-	
-	const myint = ['React', 'Vue', 'Angular']
+	const [nome, setName] = useState();
 	
 	return(
 		<div className="App">
-			<h1>Renderização de Listas</h1>
-			<OutraLista itens={myint} />
-			<OutraLista itens="" />
-			<Box />
-			<Box />
-			<Box />
-			<Box />
+			<h1>State Lift</h1>
+			<SeuNome setName={setName} />
+			<Saudacao nome={nome} />
 		</div>
 	);
 }
