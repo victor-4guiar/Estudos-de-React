@@ -10,4 +10,4 @@ function MiPais({flag, nombre, descripcion, lema}){
 	)
 }
 
-export default MiPais;
+export default MiPais
