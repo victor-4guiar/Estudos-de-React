@@ -12,6 +12,7 @@ function App() {
 		<div className="App">
 			<BA3 tema="dark" />
 			<BA3 tema="light" />
+			<BA3 tema="a" />
 		</div>
 	);
 }
